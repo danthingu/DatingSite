@@ -27,6 +27,7 @@ namespace DatingApp.API.Controllers
         // }
 
         // INSTEAD OF THE ActionResult<IEnumerable<string>>, CHANGE TO IACTIONRESULT SO WE CAN RETURN 'HTTP RESPONSES' INSTEAD OF JUST STRING, WE CAN RETURN OK() for example
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues() 
         {
